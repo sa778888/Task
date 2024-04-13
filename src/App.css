@@ -391,6 +391,9 @@ body {
     .down {
         display: none;
     }
+    .as{
+        display: none;
+    }
 }
 
 @media screen and (max-width:977px) {

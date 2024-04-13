@@ -11,7 +11,7 @@ const Hero = () => {
             <img className='hero' src="./hero.png" alt="" />
             <div className="text-overlay1" style={{ position: 'absolute', top: 30, left: 80, display: 'flex', justifyContent: 'space-between', width: '80%' }}>
                 <img className='img1' src="./arrow.svg" alt="" />
-                <button style={{background:"transparent",border:"none"}}                             onClick={handleGroupButtonClick}
+                <button className='as' style={{background:"transparent",border:"none"}}                             onClick={handleGroupButtonClick}
 >
                     {isJoined ? <img className='img2' src="./join2.png" alt="" /> : <img src="./leave2.png" alt="" />}
                     </button>
