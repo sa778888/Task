@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 300px;
+            height: auto;
+            border: none;
+            padding: 20px;
+        }
+        .input-field{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgb(113, 109, 109);
+            padding: 10px;
+        }
+        #loc{
+            width: 100%;
+            border: none;
+            font-size: 18px;
+        }
+        .warn{
+            width: 100%;
+            display: flex;
+            align-items: start;
+            gap: 2px;
+            padding: 0px;
+        }
+        .warn p{
+            color:rgb(113, 109, 109) ;
+            font-size: 13px;
+            margin: 2px;
+        }
+        .warn img{
+            width: 12px;
+            height: 12px;
+            margin: 2px;
+        }
+        .follow-field{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            gap: 10px;
+        }
+        .follow-field p{
+            width: 100%;
+            border: none;
+            font-size: 15px;
+        }
+        .follow-field img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .follow-field button{
+            padding: 5px 10px;
+            border-radius: 10px;
+            border: none;
+        }
+        .see{
+            width: 100%;
+            text-align: end;
+            color: rgb(48, 48, 215);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="input-field">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABUElEQVR4nOWUvUoDURCFvxcILhpBUbBQe8HKwiYGW7FUtDMhRd5ADfEBBHtBsJWAhSiIjRZaqU+gdtoYURt/kKhcOCtTbJa9u7HKgYGdv3Nm7+xe6AbkgQ3gCniVXQJ15TJhXoQ/bewFmMtC3hLRAVAAcrIZ4FC5VhqRfjP5akxdTTXPQJ+PQN1MHiIAyrKevygcqdaJJca1mgqG/M6c/a0RKSrmFp8Y4fHk5FciFuzeBAmFC0+MppoC+eUIgRXleuU/+ghcqKkoP9CxhOQ35ohmFTv3EVhX07aJOcKSzC55R7VrPgJjwDfwAQzF1A0Dn6odxRP7mmwzpmZLNQ1SYFKTvbWZbhx41588QUrsasLjiNyJcm4HqTGoa8ARLZj4krkiBsiIZUM2osU+KbZIh9AQ4Slwpuc9Oog88GB+tHvf2zMJpvTNfwHT/BOqsi7CL/HMbEFq6KbcAAAAAElFTkSuQmCC">
+            <input type="password" placeholder="Enter Your Location" id="loc" required name="loc">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAmUlEQVR4nO2SMQrCMBSGv4O4e5g61qnQsUgbj+E97NKeqe6u4gXaSPAFQgY75MUpHzwIGb4//C9Q+DIAb2AGDijTABtgZZ7aISaQ+5k0xDVQyfkWBbw0Ot+AFWijEHffa8itTBhiZCdqchuEnFLEv+S+ljMJdDvya5HbUstffstxR25I5JLr5Z4xp9zxyFFLHLAAd1m22wmFD7JcfTk9HFkUAAAAAElFTkSuQmCC">
+        </div>
+        <div class="warn">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEWElEQVR4nO1aS28cRRBuC0NAQYBNAhzhiEDAX+AABEgIIPlAePiSLN7t75vpmo2EL2FyJpwiRSJ/gSNPASIICVBMQkguxInJCcgBEW7kIUCgmq1ereRdZx+zuxMrJY00dvdW99dVXV391Th3UzapiMh8CrwowKEAfCzAaiD/DMC14tF38qy1HQrk7uV6fc5VQfLFxdsD+XogPw/Av0L+N+DzjwCfCfAayS0TByAidwjQFOBie1LA1QAcC8ABtUyapg/ritdqtVv10Xf9X2E18m0hv9LfxN8H8reMzHRxJgIiAM8LcKFjVU8Ecu9btdrdg+pK0/QeAfYF4GQbEPBzCjw7bjd6rwPAD4F8uiz9Qu4Q4McOCx0p3Tr7G40HdOI2yF+B5MLCwi2lDuKcU53B+zQAl6O1kyS5vxTlTeAhNbet0tkkSR51Y5YkSR4L5Dkbc03nMJJCktujQgG+z7Jsm5uQLNfrc0J+Y2NfUK8YSpH6Z4c7fddsNre6CUuz2dwqwPHoZkPtmbix1Z30sHNTEu/9vR1udmTwEGsbexJ7oq89g3YA2DHIYVecExqdXEVEyBA3f18uFsj98ZwYNcSGJFkM5Pv27BpFV57ns4E8bXMLG3bWfEdTBe2cef+UG1EEONpxgB4cWV+SPGdR7OKGVtHkLUaIUQcdBxDn3Ew7knq/p/fA5Bfmh3srCsQJ8KblZJ927yAyb2n11WESwEkBWa7X5+yO83fXeUqSvGQDflnGgOMCoiLA1+Y56wNIIN81kx1wVQdCHjQg76xrLK6grWj1QuWBJOY9wAfdBj2vjXqLqzqQ0Gg8YkBW1zcCl4rGEvOqcQHJsmybAfl9XaNGAm3M8/y2qgMhuSXyBJsayKUbxbVIbu/pWptmswv5kcXm3aWGSQXTAvTkRMJvsANRyTNXcZGNDkRjAPVkP+YqLmIpSub9zl6sRZE0KgPoKioiMh+TRpJ3de+khHLL9/aVMWjnDVGAN0rR6f2SbYFPenciXzX3Oll61AKOlqByJgCniugKvLLxVRf4tejo/TNVA5J5v9N0/XLdMoRS+2aVU6OSD+pOZblWnuezApwxIEl/rHvker1PXUUkiwtMnuu7KKT1CbPKZSXHxj7L680nTZ8I5BUDMlgpQ+nJuAJKW7opCVtE+pq51OFhSewTpuD4NEjsRqNxZyBXbEFXhq4zFlkmsBrLCvq3m+zB920sx41c8CkKPWbaghUHHneT2RNrtoDn0zR9sBTFuhrRzYwVDxoOXcmS5/msRqeOjb3SXFq6bxzF0CIA2CCnS6y+zli1+EzHAXp4rLV3rU+0zW6svdKYw3zFUOwD75di2iHmSmVWi/uJaCGmM+Zy1zS9DkCuFx+9xWnYVg5AH33XolEKvFz0afUteIKYdgiQTOULiIIE8H6PEsrFFWDATzg0FVdiUBPAqQDoJkooKxert7ZAfljUHsk/4kc1+i7AT3o9tT67et4nboq78eV/f27mpuVUPk8AAAAASUVORK5CYII=">
+            <p>Your location will help us serve better and extend a personalised experience.</p>
+        </div>
+        <br>
+        <div class="warn">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABC0lEQVR4nO2TPUoDQRiGHy3tPUAKcwMPsbA5QKxkSfYEFulsLSR1BAsthNjYB5I0aZILeIAsGAJWKgQSURl4B4aw7A+zCwp+8MJ8w+7zfMvOwC+qA2ANrIA7oFm14AT4dvIBnFYpOBf4GZhrPalScCvoPXCm9XtV8A6wFfQCaGv96gs+BK4F+wKGQAvoaW/hAz8CngTaAX0gVB61f1UGaE+HrQf1b5rYws0XvOydKDcJEBQRbNTHDtzkMgNusywisH1YMvucvyWInP9Wi2Ckd27qEEQ6zuZCNuoQjPX8IA3uK+gCn1nT+wqmedP7COIi06cJkgI31k3m9GmCQFc+D2ymnwHHeYL/Iq1+AL6trN30U+Y9AAAAAElFTkSuQmCC">
+            <p style="color: black;">RECOMMENDED GROUPS</p>
+        </div>
+        <div class="follow">
+            <div class="follow-field">
+                <img src="CHAIRPERSON.png">
+                <p>Leisure</p>
+                <button>Follow</button>
+            </div>
+            <div class="follow-field">
+                <img src="CHAIRPERSON.png">
+                <p>Leisure</p>
+                <button>Follow</button>
+            </div>
+            <div class="follow-field">
+                <img src="CHAIRPERSON.png">
+                <p>Leisure</p>
+                <button>Follow</button>
+            </div>
+            <div class="follow-field">
+                <img src="CHAIRPERSON.png">
+                <p>Leisure</p>
+                <button>Follow</button>
+            </div>
+        </div>
+        <br>
+        <div class="see">See More...</div>
+    </div>
+</body>
+</html>

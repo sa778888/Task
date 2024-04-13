@@ -1,0 +1,138 @@
+.custom-po {
+    margin-top: 1vw;
+    height: auto;
+    width: auto;
+  }
+  
+  .custom-post1 {
+    height: auto;
+    width: 90%;
+    border: 2px solid rgb(206, 203, 203);
+    border-radius: 0.5rem;
+  }
+  
+  .custom-mainimg {
+    width: 100%;
+    height: 25vh;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  .custom-post2 {
+    display: flex;
+    padding: 20px;
+    text-align: left;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .custom-post2 > * {
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  .custom-bot {
+    margin-top: 1rem;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .custom-dp {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 1.5rem;
+  }
+  
+  .custom-botleft {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .custom-botright {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .custom-para1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0%;
+    margin: 0%;
+  }
+  
+  .custom-but2 {
+    padding: 0.25rem 0.8rem;
+    border: none;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+  
+  .custom-but2 img {
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  .custom-mid1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .custom-options {
+    background-color: white;
+    height: 2rem;
+    width: 4rem;
+  }
+  
+  .custom-mainhead {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .custom-but1 {
+    padding: 0%;
+    margin: 0%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .custom-mid2 {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .custom-but3 {
+    height: 2rem;
+    font-size: 1.15rem;
+    padding-top: 0.24rem;
+    padding-bottom: 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(209, 206, 206);
+    background-color: white;
+  }
+  
+  .custom-but3 p {
+    margin: 0;
+    color: red;
+  }
+  
+  .custom-but3:hover {
+    border: none;
+    cursor: pointer;
+  }
+  
+  .custom-mid21 {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+  
+  .custom-mid21 img {
+    height: 1.5rem;
+  }
